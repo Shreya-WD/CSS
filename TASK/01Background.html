@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Property In CSS</title>
+    <style>
+        div[class*="background"]{
+        border: 10px dashed rgb(26, 32, 154);
+        margin: 10px ;
+        height: 500px;
+        color: rgb(142, 75, 204);
+        font-size: 50px;
+        }
+        .background-attachment{
+        background-image: url(../../CSS/Images/beautiful.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        }
+        .background-clip{
+        background-image: url(../../CSS/Images/beautiful.jpg);      
+        background-repeat: no-repeat;
+        padding: 200px;
+        background-clip: padding-box;
+        background-clip: content-box;
+        background-clip: border-box; 
+        }
+        .background-color{
+          background-color: aquamarine;
+        }
+        .background-image{
+          background-image: url(../../CSS/Images/beautiful.jpg) ;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        .background-origin{
+          border: 20px dashed rgb(42, 165, 159) !important;
+          background: url(../../CSS/Images/beautiful.jpg);
+          padding: 100px;
+          background-repeat: no-repeat;
+          background-origin: border-box;
+          background-origin: padding-box;
+          background-origin: content-box;
+        }
+        .background-position{
+          background-image: url(../../CSS/Images/beautiful.jpg);
+          background-size: 200px;
+          background-repeat: no-repeat;
+          /* background-size: cover; */
+          background-position: center;
+          background-position: top;
+          background-position: left;
+          background-position: right;
+          background-position: bottom;
+          background-position: 100px 250px;
+        }
+        .background-repeat{
+          background-image: url(../../CSS/Images/beautiful.jpg);
+          background-size: 400px;
+          background-repeat: repeat-y;
+          background-repeat: repeat-x;
+          background-repeat: round;
+          background-repeat: space;
+          background-repeat: no-repeat;
+        }
+        .background-size{
+          background-image: url(../../CSS/Images/beautiful.jpg);
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-size: cover;
+          background-size: 400px;
+        }
+        .background-multiple{
+          background-image: url(../../CSS/Images/beautiful.jpg), url(../Images/forest.jpg);
+        background-repeat: no-repeat;
+        background-size: 250px ,cover;
+        background-position: top 50px right 50px, center;
+      }
+      .background-multiple2 {
+        background-image: url(../Images/forest.jpg), url(../../CSS/Images/beautiful.jpg);
+        background-repeat: no-repeat;
+        /* background-size: contain; */
+        background-size: 50%;
+        background-position: left, right;
+      }
+      .background-shorthand {
+        background: url(../Images/forest.jpg)no-repeat center/cover;
+      }
+        
+    </style>
+  </head>
+  <body>
+    <center><h1><u>Background Property In CSS</u></h1></center>
+    <hr/>
+    <ol>
+     <h3><li>background-attachment</li>
+      <li>background-clip</li>
+      <li>background-color</li>
+      <li>background-image</li>
+      <li>background-origin</li>
+      <li>background-position</li>
+      <li>background-repeat</li>
+      <li>background-size</li>
+      <li>background-multiple</li>
+      <li>background-multiple2</li>
+      <li>background-shorthand</li></h3>
+    </ol>
+    <hr/>
+    <div class="background-attachment">background-attachment</div>
+    <div class="background-clip">background-clip</div>
+    <div class="background-color">background-color</div>
+    <div class="background-image">background-image</div>
+    <div class="background-origin">background-origin</div>
+    <div class="background-position">background-position</div>
+    <div class="background-repeat">background-repeat</div>
+    <div class="background-size">background-size</div>
+    <div class="background-multiple">background-multiple</div>
+    <div class="background-multiple2">background-multiple2</div>
+    <div class="background-shorthand">background-shorthand</div>
+  </body>
+</html>
+

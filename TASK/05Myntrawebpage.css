@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+.header{ 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 90px;
+}
+.left{
+    margin: 0px;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+.logo,.nav{
+    margin:auto;
+    height: 62px;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    font-family: sans-serif;
+}
+.logo img{ 
+    width: 90px;
+    height: 50px;
+    margin-top: 10px;
+}
+.nav a{
+    margin: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: 100px;
+    font-weight: 600;
+    
+}
+.right{
+    display: flex;
+}
+.right .search{
+    width: 400px;
+    height: 38px;
+    margin-left: 30px;
+    background-color: lightgray;
+    border-radius: 5px;
+    padding: 0 10px;
+}
+.search i{
+    color: rgb(12, 12, 12);
+}
+.search input{
+    border: #f7f7f7;
+    background: transparent;
+    width: 240px; 
+    margin-top: 12px;
+}
+.search{
+    align-items: center; 
+    justify-content: center; 
+}
+.icon{
+    display: flex;
+    margin-left: 70px;
+    gap: 20px;
+}
+img{
+    width: 250px;
+    margin:auto;
+    padding: 0%;
+}
+.div .icon{
+    width: 10px;
+    height: 40px;
+    font-style: normal;
+    background-color: white;
+}
+#profile,.wishlist,.Bag{
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+}
+.contain {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.contain img{
+    width: 100%;
+}
+.contain .col-1 {
+    width: calc(16.67% - 30px);
+}
+.products h2 {
+    margin: 0;
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+}
+.products h3 {
+    margin: 0;
+    font-size: 15px;
+    text-align: center;
+    color: #fff;
+}
+.products {
+    background: rgb(88, 2, 13);
+}
+.head-container {
+    /* text-align: center; */
+    padding: 20px;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+}
+
+.head-container h1 {
+    color: #000;
+}
+.products .text {
+    padding: 3px;
+}
+.bottom-text {
+    padding: 12px 0;
+}
+
+footer{
+    background-color: #f7f7f7;
+    width: 100%;
+    margin-top: 30px;
+}
+.list{
+    gap: 70px;
+    margin-left: 200px;
+    margin-right: 200px;
+    display: flex;
+    text-decoration: none;
+}
+#list-1,.list-2,.list-3,.list-4{
+    margin-top: 50px;
+}
+.col2{
+    margin-top: 50px;
+}
+.icons{
+    margin-top: 30px;
+}
+.getiton{
+    width: 30%;
+}
+.appstore{
+    width: 27%;
+    border-radius: 8px;
+}
+
+
+

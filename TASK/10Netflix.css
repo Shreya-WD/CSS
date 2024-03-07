@@ -1,0 +1,450 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body {
+    background: #000;
+}
+.nexflix{
+    position: relative;
+}
+.nexflix,img{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+.nav,.left,.right{
+    display: flex;
+    gap: 10px;
+    padding: 15px;
+    position:absolute; 
+    top: 0;
+    margin-top: 10px;
+    margin-left: 55px;
+}
+h1{
+   font-weight: normal;
+   font-family: UberMove, sans-serif;
+   color: red;
+   font-weight: bold;
+   font-size: 50px;
+   margin-left: 10px;
+   
+}
+/*body {
+    background: #000;
+}*/
+.right{
+   margin-left: 436%;
+}
+.signin{
+   border: 1px solid red;
+   border-radius: 3px;
+   width: 80px;
+   padding: 3px;
+   font-family: UberMove, sans-serif;
+   text-align: center;
+   background-color: red;
+   color: rgb(242, 240, 240);
+   margin-bottom: 10px;
+
+     
+}
+.text-img-section {
+    position: relative;
+    display: flex;    
+    justify-content: center;
+    color: rgb(255,255,255);
+    text-align: center;
+    height: 100%;    
+    min-height: auto;
+    padding: 4.5rem 0;
+}
+
+.text-section-main {
+    max-width: calc( 83.33333333333334% - 6rem );
+    position: relative;
+    display: flex;
+    justify-content: center;
+    color: rgb(255,255,255);
+    text-align: center;
+    height: 100%;
+    min-height: auto;
+    padding: 4.5rem 0;
+    align-items: center;
+}
+
+.text-container {
+    text-align: left;
+    padding: 0;
+    padding-right: 0.375rem;
+    flex-basis: 50%;
+    z-index: 1;
+    width: 100%;
+}
+
+h2.text-title {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+p.text-subtitle {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.video-container {
+    padding-left: 6px;
+}
+
+.video-img {
+    position: relative;
+}
+.default-bg {
+    width: 100%;
+    height: 0.5rem;
+    position: absolute;
+    bottom: -0.5rem;
+    background-color: rgb(35,35,35);
+}
+.main-video {
+    z-index: -1;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    max-width: 73%;
+    max-height: 54%;
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.main-video-part {
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    bottom: 8%;
+    transform: translateX(-50%);
+    margin: 0 auto;
+    background: rgb(0,0,0);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    min-width: 15rem;
+    padding: 0.25rem 0.65rem;
+    border: 2px solid rgba(128,128,128,0.7);
+    box-shadow: 0 0 2em 0 rgb(0,0,0);
+    border-radius: 0.75rem;
+    z-index: 1;
+}
+
+.main-video-part>div {
+    margin: 0 1rem 0 0;
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+}
+
+.default-text {
+    text-align: left;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -webkit-flex-shrink: 1;
+    -ms-flex-negative: 1;
+    flex-shrink: 1;
+    margin: 0.3rem 0;
+}
+
+.default-text>div {
+    color: rgb(255,255,255);
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.main-video-part>div img {
+    height: 80px;
+}
+.download-option {
+    width: 48px;
+    height: 60px;
+    outline: 2px solid rgb(0,0,0);
+    outline-offset: -2px;
+    display: block;
+    background: url(https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif) center center no-repeat;
+    background-size: 100%;
+    content: '';
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+.text-section-main.flex-direction {
+    flex-direction: row-reverse;
+}
+footer.footer-container {
+    width: calc(83.33333333333334% - 6rem);
+    padding: 0 48px;
+    margin: 72px auto;
+}
+
+.footer-wrapper {
+    width: 100%;
+    height: auto;
+}
+
+.footer-content {
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: inherit;
+    height: inherit;
+    margin-top: 0px;
+    margin-left: 0px;
+    width: 100%;
+    flex-direction: row;
+    padding: 0px;
+}
+
+.footer-column {
+    flex: 0 0 100%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: inherit;
+    padding: 0px;
+}
+
+.content {
+    margin-bottom: 12px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.content a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 2px;
+}
+
+.footer-column-content {
+    margin: 12px 0;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.footer-links {    
+    display: inline-flex;   
+    flex-wrap: wrap;
+    width: inherit;
+    height: inherit;
+    margin-top: -1rem;
+    margin-left: -0.75rem;
+    width: calc(100% + 0.75rem);    
+    flex-direction: row;
+    padding: 0px;
+}
+li.footer-link {
+    footer.footer-container {
+    width: calc(83.33333333333334% - 6rem);
+    padding: 0 48px;
+    margin: 0 auto;
+}
+
+.footer-wrapper {
+    width: 100%;
+    height: auto;
+}
+
+.footer-content {
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: inherit;
+    height: inherit;
+    margin-top: 0px;
+    margin-left: 0px;
+    width: 100%;
+    flex-direction: row;
+    padding: 0px;
+}
+
+.footer-column {
+    flex: 0 0 100%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: inherit;
+    padding: 0px;
+}
+
+.content {
+    margin-bottom: 12px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+;
+    a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 2px;
+}
+
+.footer-column-content {
+    margin: 12px 0;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.footer-links {
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: inherit;
+    height: inherit;
+    margin-top: -1rem;
+    margin-left: -0.75rem;
+    width: calc(100% + 0.75rem);
+    flex-direction: row;
+    padding: 0px;
+};
+    flex: 0 0 calc(25% - 0.75rem);
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: inherit;
+    padding: 0px;
+    margin-top: 16px;
+    margin-left: 12px;
+}
+ul.footer-link-container {
+    display: inline-flex;  
+    flex-wrap: wrap;
+    width: inherit;
+    height: inherit;
+    margin-top: -1rem;
+    margin-left: -0.75rem;
+    width: calc(100% + 0.75rem);  
+    flex-direction: row;
+    padding: 0px;
+    margin-left: 5px;
+}
+li.footer-link a {     
+    display: inline;
+    font: inherit;
+    letter-spacing: inherit;
+    line-height: inherit;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;    
+    text-decoration: underline;     
+}
+.language-selector {
+    margin-left: -1.5rem;
+    width: calc(100% + 1.5rem);
+}
+
+.default-language {
+    width: auto;
+    margin-top: 8px;
+    margin-left: 24px;
+}
+
+.footer-lan-selector {
+    display: inline-flex;
+    flex-wrap: wrap;
+    vertical-align: text-top;
+}
+
+label.label {
+    display:none;
+}
+
+.selector-image-svg {
+    gap: 2px;
+    letter-spacing: normal;
+    display: flex;
+    line-height: 100%;
+    padding: 2px;
+    /* position: relative; */
+    text-align: left;
+    z-index: 0;
+    align-items: center;
+}
+
+.default-svg {
+    position: absolute;
+    pointer-events: none;
+    width: 1rem;
+    height: 1rem;
+    left: 0.75rem;
+    right: auto;
+}
+
+.default-svg svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+select {
+    width: auto;
+    color: inherit;
+    filter: opacity( 100% );
+    padding: 6PX 36PX;
+    background: 0;
+    color: #fff;
+}
+
+select+.default-svg {
+    padding-right: 0.75rem;
+    border-color: rgba(128,128,128,0.7);
+    border-width: 1px;
+    border-style: solid;
+    position: absolute;
+    display: flex;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background: white;
+    border-radius: 2px;
+    border: 1px solid black;
+    align-items: center;
+    color: inherit;
+    -webkit-box-pack: end;
+}
+
+select+.default-svg svg {
+    width: 16px;
+    height: 16px;
+    display: unset;
+}
+.column-four-content {
+    font-size: 14px;
+    font-weight: 400;
+    color: #ffffffb3;
+    margin-top: 24px;
+}
+.bg-color {
+    background: rgb(0 0 0 / 40%);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.netflix {
+    position: relative;
+}
